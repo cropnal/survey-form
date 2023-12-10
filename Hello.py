@@ -1,17 +1,5 @@
 import streamlit as st
 import pandas as pd
-import subprocess
-
-def install_libraries():
-    try:
-        # Use subprocess to run the pip install commands
-        subprocess.check_call(["pip", "install", "matplotlib", "seaborn"])
-
-        print("Matplotlib and Seaborn installed successfully.")
-    except subprocess.CalledProcessError as e:
-        print(f"Error installing libraries: {e}")
-
-
 import matplotlib.pyplot as plt
 import seaborn as sns
 import os
